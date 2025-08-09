@@ -1,0 +1,314 @@
+.contact-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-container {
+  background-color: white;
+  width: 100vw;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 2.5rem 1rem;
+  margin: 0;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.form-section {
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+  background-color: #fdfdff;
+}
+
+.form-group textarea {
+  min-height: 50px;
+  max-height: 300px;
+  resize: vertical;
+  overflow-y: auto;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 12px; /* more rounded */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 300px;
+  margin: 1rem auto 0;
+  display: block;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4); /* more realistic */
+}
+
+.submit-btn:hover {
+  background: #45a049;
+  transform: translateY(-3px); /* more subtle float effect */
+  box-shadow: 0 8px 20px rgba(69, 160, 73, 0.5);
+}
+
+.submit-btn:disabled {
+  background: #1abc9c;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.footer-design-wrapper {
+  background-color: #e9e9e9;
+  padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-design-wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1abc9c;
+  z-index: 0;
+}
+
+.footer-design-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem 1rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: transparent;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.footer-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #1abc9c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Phone Section Specific Styles */
+.footer-section.phone-section {
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 0;
+}
+
+.footer-section.phone-section .footer-list {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-section.phone-section .footer-list li {
+  justify-content: flex-start;
+  font-family: monospace;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+
+.footer-section.phone-section h3 {
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+.footer-section.phone-section {
+  padding-right: 0;
+}
+
+/* Office Location Section */
+.office-location {
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .footer-design-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .office-location {
+    padding-left: 0;
+  }
+}
+/* Add these styles to your existing CSS */
+.name-group,
+.email-group,
+.phone-group,
+.subject-group {
+  flex: 1 1 22% !important; /* Reduced width for all fields */
+  min-width: 200px !important; /* Smaller minimum width */
+}
+
+.message-group {
+  flex: 1 1 100% !important; /* Full width for message field */
+}
+
+/* Adjust the form row gap to be smaller */
+.form-row {
+  gap: 1rem !important;
+}
+/* Chat Now Button */
+.chat-now-button {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    background-color: #42a37e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}

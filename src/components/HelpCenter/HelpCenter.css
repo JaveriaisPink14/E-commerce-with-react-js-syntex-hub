@@ -1,0 +1,424 @@
+/* Help Center Section Wrapper */
+
+
+.hc-wrapper {
+  max-width: 100%;
+  margin: auto;
+  padding: 80px 30px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+  background-color: #fbfbff; 
+}
+
+/* Customer Care Banner */
+.customer-care-banner {
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  flex-direction: column;
+  padding: 40px 20px;
+  /* Adjust this line to move the banner upward */
+  margin-top: -20px; /* Example: Changed to a negative value to move it up */
+}
+
+.customer-care-banner h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.customer-care-banner .search-container {
+  /* Remove absolute positioning and bottom property */
+  /* position: absolute; */
+  /* bottom: 30px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 30px; /* Add space above the search container */
+  /* Or if you want to push it down while the h1 stays at the top: */
+  /* margin-top: auto; */
+}
+
+.customer-care-banner .search-container input {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.customer-care-banner .search-container button {
+  padding: 14px 20px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.customer-care-banner .search-container button:hover {
+  background-color: #333;
+}
+
+/* Section Title */
+.hc-section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 60px 0 50px;
+  color: #2d2d2d;
+}
+
+/* FAQ Grid - Updated */
+.hc-topics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This creates 3 equal-width columns */
+  gap: 50px;
+  margin-bottom: 100px;
+  padding: 0 10px;
+}
+
+.hc-topic-card {
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  padding: 50px 45px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.15rem;
+  min-height: 300px;
+}
+
+.hc-topic-card:hover {
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+}
+
+.hc-topic-card * {
+  color: #000 !important;
+}
+
+.hc-topic-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hc-icon {
+  font-size: 2rem;
+  margin-right: 14px;
+}
+
+.hc-topic-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hc-topic-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 14px 0;
+}
+
+.hc-topic-card li {
+  margin: 12px 0;
+  font-size: 1.05rem;
+}
+
+.link-btn {
+  font-size: 1rem;
+  color: #0073e6;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.link-btn:hover {
+  color: #004aa3;
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.view-all-btn:hover {
+  text-decoration: underline;
+}
+
+/* Popular FAQs */
+.hc-popular ul {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 0 0 60px;
+  padding: 0;
+}
+
+.hc-popular li {
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+  color: #000 !important;
+}
+
+.hc-popular li * {
+  color: #000 !important;
+}
+
+.hc-popular li:last-child {
+  border-bottom: none;
+}
+
+.hc-popular li::after {
+  content: '›';
+  font-size: 1.5rem;
+  color: #000 !important;
+  margin-left: 10px;
+}
+
+.hc-popular li:hover {
+  background-color: #f5f5f5;
+}
+
+/* Contact Section (Reduced Height) */
+.contact-section {
+    background-color: #ffffff; /* A light grey background, similar to the image */
+    padding: 30px 0; /* Some top and bottom padding */
+    text-align: center; /* Center align all content */
+    font-family: Arial, sans-serif; /* Or your preferred font */
+}
+
+.contact-title {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333; /* Dark grey text color */
+    margin-bottom: 20px; /* Space below the title */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 1px; /* Add some letter spacing */
+}
+
+.contact-image-container {
+    width: 80%; /* Adjust width as needed, or set a max-width */
+    max-width: 800px; /* Example max width */
+    margin: 0 auto 30px auto; /* Center the image and add space below */
+    overflow: hidden; /* Ensure image doesn't overflow container */
+}
+
+.contact-image-container img {
+    width: 100%; /* Make image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.contact-button {
+    background-color: #ffffff; /* White background for the button */
+    color: #333; /* Dark text color for the button */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 15px 40px; /* Padding inside the button */
+    font-size: 16px; /* Font size for the button text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions for hover effects */
+    text-decoration: none; /* Remove underline if it's an <a> tag */
+    display: inline-block; /* Allows padding and margin to be applied correctly */
+}
+
+.contact-button:hover {
+    background-color: #eee; /* Slightly darker background on hover */
+    border-color: #999; /* Darker border on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hc-topics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-care-banner {
+    height: 400px;
+  }
+
+  .customer-care-banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .customer-care-banner .search-container input {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hc-topics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-care-banner {
+    height: 350px;
+  }
+
+  .customer-care-banner h1 {
+    font-size: 2rem;
+  }
+
+.contact-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center !important;
+  max-width: 1400px;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+}
+
+
+
+  .contact-button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+.faq-contact-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
+
+.popular-faqs-section {
+  flex: 1;
+  min-width: 400px;
+}
+
+.hc-popular-ul {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.hc-popular-ul li {
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hc-popular-ul li:last-child {
+  border-bottom: none;
+}
+
+.hc-popular-ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+.contact-section {
+  flex: 1;
+  min-width: 400px;
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.contact-image-container {
+  width: 100%;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+}
+
+.contact-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-button {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 15px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-button:hover {
+  background-color: #eee;
+  border-color: #999;
+}
+
+@media (max-width: 900px) {
+  .faq-contact-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-faqs-section,
+  .contact-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+}

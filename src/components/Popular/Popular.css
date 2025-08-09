@@ -1,0 +1,80 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0;
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popular-item img {
+  width: 240px;         /* increased from 200px */
+  height: 320px;        /* fixed height for uniformity */
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional: adds depth */
+  transition: transform 0.3s ease;
+}
+
+.popular-item img:hover {
+  transform: scale(1.03); /* optional: slight zoom on hover */
+}
+.product-card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.product-name {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* show only 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2.8em;               /* roughly fits 2 lines */
+}
+/* Item.css */
+
+.item-name {
+  width: 150px; /* Adjust this width based on your desired layout */
+  white-space: normal; /* This is typically the default, but explicitly setting ensures wrapping */
+  word-wrap: break-word; /* Ensures long words break and wrap */
+  /* You might also want to set a font-size or line-height if needed */
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Optional: If you want to limit to exactly two lines and add an ellipsis */
+.item-name.two-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis if content overflows */
+}

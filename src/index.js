@@ -1,17 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Auth0Provider } from '@auth0/auth0-react';
+import ShopContextProvider from './context/ShopContext';
+import LoginProvider from './context/LoginContext';
+import CartContextProvider from './context/CartContext'; // ✅ fixed import
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+  <Auth0Provider
+    domain="dev-gvjhp320lrmf5tvz.us.auth0.com"
+    clientId="2Xq4juEv8E4bEnIY2VNr0EH7WfXN4YVb"
+    authorizationParams={{ redirect_uri: window.location.origin ,
+
+    }}
+  >
+    <LoginProvider>
+      <ShopContextProvider>
+        <CartContextProvider> {/* ✅ fixed here */}
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </CartContextProvider>
+      </ShopContextProvider>
+    </LoginProvider>
+  </Auth0Provider>
+);

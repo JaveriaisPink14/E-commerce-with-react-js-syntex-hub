@@ -1,0 +1,91 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #fdc1ff, #e1ffea22 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 180px;
+  align-items: flex-start;
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* 👇 Align 'new' text and icon in one line */
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 👇 Tiny hand image like emoji */
+.hero-hand-icon-img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 100px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-latest-btn:hover {
+  background: #e03232;
+}
+
+.hero-latest-btn img {
+  width: 80px; /* Increased from 30px */
+  height: auto;
+}
+
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.hero-right img {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+}

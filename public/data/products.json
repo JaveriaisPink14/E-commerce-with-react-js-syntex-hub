@@ -1,0 +1,391 @@
+[
+
+  {
+    "id": 1,
+    "name": "Men's Casual T-Shirt",
+    "category": "men",
+    "image": "/images/product1.jpg",
+    "new_price": 1200,
+    "old_price": 1500
+  },
+  {
+    "id": 2,
+    "name": "Classic Blue Formal Shirt",
+    "category": "men",
+    "image": "/images/product2.jpg",
+    "new_price": 2800,
+    "old_price": 3500
+  },
+  {
+    "id": 3,
+    "name": "Slim Fit Black Trousers",
+    "category": "men",
+    "image": "/images/product3.jpg",
+    "new_price": 1800,
+    "old_price": 2300
+  },
+  {
+    "id": 4,
+    "name": "White Casual Polo Tee",
+    "category": "men",
+    "image": "/images/product4.jpg",
+    "new_price": 3200,
+    "old_price": 4200
+  },
+  {
+    "id": 5,
+    "name": "Olive Green Cargo Pants",
+    "category": "men",
+    "image": "/images/product5.jpg",
+    "new_price": 2500,
+    "old_price": 3000
+  },
+  {
+    "id": 6,
+    "name": "Beige Chino Pants",
+    "category": "men",
+    "image": "/images/product6.jpg",
+    "new_price": 950,
+    "old_price": 1200
+  },
+  {
+    "id": 7,
+    "name": "Men's Leather Jacket",
+    "category": "men",
+    "image": "/images/product7.jpg",
+    "new_price": 5500,
+    "old_price": 6500
+  },
+  {
+    "id": 8,
+    "name": "Black Leather Biker Jacket",
+    "category": "men",
+    "image": "/images/product8.jpg",
+    "new_price": 2200,
+    "old_price": 2700
+  },
+  {
+    "id": 9,
+    "name": "Cotton Shorts",
+    "category": "men",
+    "image": "/images/product9.jpg",
+    "new_price": 850,
+    "old_price": 1000
+  },
+  {
+    "id": 10,
+    "name": "Men's Slim Jeans",
+    "category": "men",
+    "image": "/images/product10.jpg",
+    "new_price": 2400,
+    "old_price": 3000
+  },
+  {
+    "id": 11,
+    "name": "Women's Designer Kurti",
+    "category": "women",
+    "image": "/images/product11.jpg",
+    "new_price": 2700,
+    "old_price": 3200
+  },
+  {
+    "id": 12,
+    "name": "Velvet Vibe Women’s Collection",
+    "category": "women",
+    "image": "/images/product12.jpg",
+    "new_price": 1900,
+    "old_price": 2500
+  },
+  {
+    "id": 13,
+    "name": "womens Hoodie",
+    "category": "women",
+    "image": "/images/product13.jpg",
+    "new_price": 2200,
+    "old_price": 2700
+  },
+  {
+    "id": 14,
+    "name": "Women's track",
+    "category": "women",
+    "image": "/images/product14.jpg",
+    "new_price": 3400,
+    "old_price": 4100
+  },
+  {
+    "id": 15,
+    "name": "womens Track Suit",
+    "category": "women",
+    "image": "/images/product15.jpg",
+    "new_price": 1650,
+    "old_price": 2100
+  },
+  {
+    "id": 16,
+    "name": "women Sports shirt",
+    "category": "women",
+    "image": "/images/product16.jpg",
+    "new_price": 4500,
+    "old_price": 5000
+  },
+  {
+    "id": 17,
+    "name": "Women's Stylish shirt",
+    "category": "women",
+    "image": "/images/product17.jpg",
+    "new_price": 3900,
+    "old_price": 4500
+  },
+  {
+    "id": 18,
+    "name": "women Backpack",
+    "category": "women",
+    "image": "/images/product18.jpg",
+    "new_price": 1400,
+    "old_price": 1800
+  },
+  {
+    "id": 19,
+    "name": "women Formal Shirt",
+    "category": "women",
+    "image": "/images/product19.jpg",
+    "new_price": 2100,
+    "old_price": 2600
+  },
+  {
+    "id": 20,
+    "name": "Women's jean",
+    "category": "women",
+    "image": "/images/product20.jpg",
+    "new_price": 2900,
+    "old_price": 3600
+  },
+  {
+    "id": 21,
+    "name": "women trouser",
+    "category": "women",
+    "image": "/images/product21.jpg",
+    "new_price": 1600,
+    "old_price": 1900
+  },
+  {
+    "id": 22,
+    "name": "womens Sports Cap",
+    "category": "women",
+    "image": "/images/product22.jpg",
+    "new_price": 750,
+    "old_price": 950
+  },
+  {
+    "id": 23,
+    "name": "Women's Sunglasses",
+    "category": "women",
+    "image": "/images/product23.jpg",
+    "new_price": 1800,
+    "old_price": 2200
+  },
+  {
+    "id": 24,
+    "name": "women Wool Sweater",
+    "category": "women",
+    "image": "/images/product24.jpg",
+    "new_price": 1300,
+    "old_price": 1600
+  },
+  {
+    "id": 25,
+    "name": "women Tie Set",
+    "category": "women",
+    "image": "/images/product25.jpg",
+    "new_price": 1200,
+    "old_price": 1500
+  },
+  {
+    "id": 26,
+    "name": "Women's Lipstick Pack",
+    "category": "women",
+    "image": "/images/product26.jpg",
+    "new_price": 1000,
+    "old_price": 1400
+  },
+  {
+    "id": 27,
+    "name": "women Pajama Set",
+    "category": "women",
+    "image": "/images/product27.jpg",
+    "new_price": 1100,
+    "old_price": 1350
+  },
+  {
+    "id": 28,
+    "name": "women Kurta Pajama",
+    "category": "women",
+    "image": "/images/product28.jpg",
+    "new_price": 2500,
+    "old_price": 3200
+  },
+  {
+    "id": 29,
+    "name": "Women's Bangles Set",
+    "category": "women",
+    "image": "/images/product29.jpg",
+    "new_price": 900,
+    "old_price": 1200
+  },
+  {
+    "id": 30,
+    "name": "women Raincoat",
+    "category": "women",
+    "image": "/images/product30.jpg",
+    "new_price": 1450,
+    "old_price": 1750
+  },
+  {
+    "id": 31,
+    "name": "kid shirt",
+    "category": "kids",
+    "image": "/images/product31.jpg",
+    "new_price": 1800,
+    "old_price": 2200
+  },
+  {
+    "id": 32,
+    "name": "kids jean",
+    "category": "kids",
+    "image": "/images/product32.jpg",
+    "new_price": 2800,
+    "old_price": 3400
+  },
+  {
+    "id": 33,
+    "name": "Kids Casual Shoes",
+    "category": "kids",
+    "image": "/images/product33.jpg",
+    "new_price": 1700,
+    "old_price": 2100
+  },
+  {
+    "id": 34,
+    "name": "kids Flip Flops",
+    "category": "kids",
+    "image": "/images/product34.jpg",
+    "new_price": 950,
+    "old_price": 1200
+  },
+  {
+    "id": 35,
+    "name": "kids westren Dress",
+    "category": "kids",
+    "image": "/images/product35.jpg",
+    "new_price": 3100,
+    "old_price": 3800
+  },
+  {
+    "id": 36,
+    "name": "Kids Sleeveless T-shirt",
+    "category": "kids",
+    "image": "/images/product36.jpg",
+    "new_price": 1000,
+    "old_price": 1200
+  },
+
+  
+  {
+    "id": 111,
+    "name": "Boho Print Shift Dress",
+    "category": "women",
+    "image": "/images/p1_img.jpg",
+    "new_price": 50,
+    "old_price": 80.5
+  },
+  {
+    "id": 112,
+    "name": "Elegant Sheath Work Dress",
+    "category": "women",
+    "image": "/images/p2_img.jpg",
+    "new_price": 85,
+    "old_price": 120.5
+  },
+  {
+    "id": 113,
+    "name": "Bohemian Maxi Dress",
+    "category": "women",
+    "image": "/images/p3_img.jpg",
+    "new_price": 60,
+    "old_price": 100.5
+  },
+  {
+    "id": 114,
+    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "category": "women",
+    "image": "/images/p4_img.jpg",
+    "new_price": 100,
+    "old_price": 150
+  },
+
+ 
+  {
+    "id": 441,
+    "name": "Stylish Summer Top",
+    "category": "women",
+    "image": "/images/new_collections.jpg",
+    "new_price": 45,
+    "old_price": 65
+  },
+  {
+    "id": 442,
+    "name": "Denim Jacket",
+    "category": "women",
+    "image": "/images/new_collections1.jpg",
+    "new_price": 89,
+    "old_price": 120
+  },
+  {
+    "id": 443,
+    "name": "Casual Trousers",
+    "category": "women",
+    "image": "/images/new_collection2.jpg",
+    "new_price": 55,
+    "old_price": 70
+  },
+  {
+    "id": 444,
+    "name": "Floral Dress",
+    "category": "women",
+    "image": "/images/new_collections3.jpg",
+    "new_price": 75,
+    "old_price": 95
+  },
+  {
+    "id": 445,
+    "name": "Classic White Shirt",
+    "category": "women",
+    "image": "/images/new_collections4.jpg",
+    "new_price": 40,
+    "old_price": 55
+  },
+  {
+    "id": 446,
+    "name": "Trendy Hoodie",
+    "category": "women",
+    "image": "/images/new_collections5.jpg",
+    "new_price": 60,
+    "old_price": 85
+  },
+  {
+    "id": 447,
+    "name": "Black Skinny Jeans",
+    "category": "women",
+    "image": "/images/new_collections6.jpg",
+    "new_price": 65,
+    "old_price": 90
+  },
+  {
+    "id": 448,
+    "name": "Printed Skirt",
+    "category": "women",
+    "image": "/images/new_collections7.jpg",
+    "new_price": 50,
+    "old_price": 70
+  }
+]

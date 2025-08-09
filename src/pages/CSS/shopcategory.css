@@ -1,0 +1,197 @@
+
+.shopcategory-banner {
+  display: block;
+  margin: -10px auto 10px auto; /* Changed top margin to -10px for slightly less upward shift */
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
+  max-width: 1200px;
+  /* --- ACCURATE CHANGE FOR THINNER BANNER --- */
+   /*height: 0px; /* Reduced height to make it "thinner" */
+  /* You can experiment with values like 200px, 300px, etc. */
+  /* If this still doesn't work after a hard refresh, temporarily try: */
+  /* height: 250px !important; */
+  /* Remember to remove !important once you identify the conflict! */
+  /* ------------------------------------------- */
+  /* object-fit: cover; /* Ensures image covers the area, might crop edges */
+  /* border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}*/
+
+.shopcategory-indexSort {
+  display: flex;
+  margin: 0px 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopcategory-sort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🔽 Very small dropdown icon */
+.shopcategory-sort img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.shopcategory-indexSort p span {
+  font-weight: 600;
+}
+
+.shopcategory-products {
+  margin: 20px 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+}
+
+/* 🖼️ Uniform image size */
+.shopcategory-products img {
+  width: 250px;
+  height: 300px; /* ✅ Fixed height */
+  object-fit: cover; /* Crop image if needed */
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Optional */
+  background-color: #f9f9f9; /* Optional for padding */
+}
+
+/* ✅ Align product name below image */
+.shopcategory-products .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background-color: #ededed;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* 🔄 Optional: Hover effect */
+.shopcategory-loadmore:hover {
+  background-color: #dcdcdc;
+  color: #000;
+  transform: translateY(-2px);
+}
+/* Remove margin/padding from root wrapper */
+.banner-wrapper {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .shopcategory-banner {
+    width: 95vw;
+    /* --- ACCURATE CHANGE FOR THINNER BANNER ON MOBILE --- */
+    height: 150px; /* Adjusted height for mobile */
+    /* You can experiment with values like 100px, 200px, etc. */
+    /* If this still doesn't work, temporarily try: */
+    /* height: 150px !important; */
+    /* ---------------------------------------------------- */
+    max-height: 250px; /* This was already here, keep it for an upper limit */
+    margin: 10px auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .shopcategory-indexSort {
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .shopcategory-products {
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .shopcategory-products img {
+    width: 100%;
+    height: auto;
+  }
+
+  .shopcategory-loadmore {
+    width: 90%;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* This media query block is a duplicate of the one above.
+     You should ideally combine them to avoid redundancy and potential conflicts.
+     For now, I'll update the height here as well, assuming it's meant to be separate for some reason.
+  */
+  .shopcategory-banner {
+    width: 100vw;
+    /* --- ACCURATE CHANGE FOR THINNER BANNER ON MOBILE (DUPLICATE BLOCK) --- */
+    max-height: 250px;
+    height: 150px; /* Consistency with the first mobile media query */
+    /* --------------------------------------------------------------------- */
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .shopcategory-indexSort {
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .shopcategory-products {
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .shopcategory-products .item {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .shopcategory-products .item p {
+    text-align: left !important;
+  }
+  .shopcategory-loadmore {
+    width: 90%;
+    height: 60px;
+    font-size: 16px;
+  }
+}

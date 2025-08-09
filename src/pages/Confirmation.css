@@ -1,0 +1,103 @@
+.confirmation {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.confirmation h1 {
+  color: #2ecc71;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.confirmation p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.confirmation h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.confirmation-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: #f9f9f9;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.confirmation-item div {
+  flex-grow: 1;
+}
+
+.confirmation-item p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.confirmation-item strong {
+  font-weight: 600;
+  color: #222;
+}
+
+.confirmation h4 {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #34495e;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.total-amount {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* 🌐 Responsive */
+@media (max-width: 600px) {
+  .confirmation {
+    padding: 20px;
+  }
+
+  .confirmation-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .confirmation-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .total-amount {
+    text-align: center;
+  }
+}
